@@ -66,7 +66,7 @@ fasterq-dump --split-files SRR12344552
 
 ### Preparación de los datos
 
-Es necesario adecuar las muestras descargadas para realizar el análisis de estos. Estos pasos se realizaron con los módulos de XICRA:
+Es necesario adecuar las muestras descargadas para realizar el análisis de estos. Estos pasos se realizaron con los módulos de _XICRA_:
 
 ```bash
 ## prepare reads
@@ -83,7 +83,7 @@ XICRA join --input test_XICRA
  
 ### _MINTmap_
 
-La instalacion de [_MINTmap_](https://github.com/TJU-CMC-Org/MINTmap) se realizó con Conda:
+La instalacion de [_MINTmap_](https://github.com/TJU-CMC-Org/MINTmap) se realizó con _Conda_:
 
 ```bash
 conda install -c bioconda mintmap
@@ -91,7 +91,7 @@ conda install -c bioconda mintmap
 
 ### _miRge3.0_
 
-La instalación de [_miRge3.0_](https://github.com/mhalushka/miRge3.0) se tuvo que realizar en un entrono de Conda propio:
+La instalación de [_miRge3.0_](https://github.com/mhalushka/miRge3.0) se tuvo que realizar en un entrono de _Conda_ propio:
 
 ```bash
 ## create conda environemt
@@ -116,7 +116,7 @@ sudo apt install r-base
 conda install -c bioconda mirge
 ```
 
-Así como su dependencias:
+Así como sus dependencias:
 
 ```bash
 ## bowtie
@@ -147,7 +147,7 @@ sudo ln -s /home/arun/software/bowtie-1.3.0-linux-x86_64/bowtie-inspect /usr/loc
 
 ### _tDRmapper_
 
-La instalción de [_tDRmapper_](https://github.com/sararselitsky/tDRmapper) se realizo con Conda:
+La instalación de [_tDRmapper_](https://github.com/sararselitsky/tDRmapper) se realizó con _Conda_:
 
 ```bash
 conda install -c bioconda tdrmapper
@@ -166,7 +166,7 @@ MINTmap.pl -f .SRR12344552_trim_joined.fastq -l ./LookupTable.tRFs.MINTmap_v1.tx
 ### _miRGe3.0_
 
 ```bash
-./miRge3.0 -s /./SRR12344552_trim_joined.fastq -lib ./miRge3_Lib/ -on human -db mirgenedb -pbwt -trf -gff -ie
+./miRge3.0 -s ./SRR12344552_trim_joined.fastq -lib ./miRge3_Lib/ -on human -db mirgenedb -pbwt -trf -gff -ie
 ```
 ### _tDRmapper_
 
@@ -176,7 +176,7 @@ perl /./TdrMappingScripts.pl ./hg19_mature_and_pre.fa ./SRR12344552_trim_joined.
 
 ## Comparación de la detección de _tRFs_
 
-A continuación se detalla el usos de los scripts creados para realizar la comparación de la detección de _tRFs_. Como ejemplo se muestra la comparación de la muestra SRR12344552:
+A continuación se detalla el uso de los scripts creados para realizar la comparación de la detección de _tRFs_. Como ejemplo se muestra la comparación de la muestra SRR12344552:
 
 ### table.py
 
@@ -206,7 +206,7 @@ python summary.py SRR12344552
 
 ### upsetR.R
 
-Compara los _tRFs_ detectados en común por los softwares, y los muestra en un gráfico:
+Compara los _tRFs_ detectados en común por los softwares, y los muestra en un gráfico.
 
 ```r
 library(UpSetR)
