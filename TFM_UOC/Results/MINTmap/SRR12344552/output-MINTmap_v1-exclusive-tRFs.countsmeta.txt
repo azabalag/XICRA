@@ -1,0 +1,2 @@
+Total reads in -f input file	Total unnormalized reads in exclusive-tRFs	Percent
+7808346	35724	0.46%
