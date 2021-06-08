@@ -153,7 +153,23 @@ La instalción de tDRmapper se realizo con Conda:
 conda install -c bioconda tdrmapper
 ```
 
-## Analisis de tRNAs
+## Analisis de tRNA
+
+Se muestra como ejemplo el análisis de tRNA para la muestra sRR12344552
 
 ### MINTmap
 
+```bash
+
+```
+
+### miRGe3.0
+
+```bash
+
+```
+### tDRmapper
+
+```bash
+
+```
