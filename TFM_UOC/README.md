@@ -58,7 +58,7 @@ ls test_XICRA/report/
 
 ## Obtención de datos
 
-Se detalla el código para obtener las muestras con _SRAtoolkit_ (https://github.com/ncbi/sra-tools). Se muestra como ejemplo la obtención de la muestra SRR12344552:
+Se detalla el código para obtener las muestras con [_SRAtoolkit_](https://github.com/ncbi/sra-tools). Se muestra como ejemplo la obtención de la muestra SRR12344552:
 
 ```bash
 fasterq-dump --split-files SRR12344552
@@ -83,7 +83,7 @@ XICRA join --input test_XICRA
  
 ### _MINTmap_
 
-La instalacion de _MINTmap_ (https://github.com/TJU-CMC-Org/MINTmap) se realizó con Conda:
+La instalacion de [_MINTmap_](https://github.com/TJU-CMC-Org/MINTmap) se realizó con Conda:
 
 ```bash
 conda install -c bioconda mintmap
@@ -91,7 +91,7 @@ conda install -c bioconda mintmap
 
 ### _miRge3.0_
 
-La instalación de _miRge3.0_ (https://github.com/mhalushka/miRge3.0) se tuvo que realizar en un entrono de Conda propio:
+La instalación de [_miRge3.0_](https://github.com/mhalushka/miRge3.0) se tuvo que realizar en un entrono de Conda propio:
 
 ```bash
 ## create conda environemt
@@ -147,7 +147,7 @@ sudo ln -s /home/arun/software/bowtie-1.3.0-linux-x86_64/bowtie-inspect /usr/loc
 
 ### _tDRmapper_
 
-La instalción de _tDRmapper_ (https://github.com/sararselitsky/tDRmapper) se realizo con Conda:
+La instalción de [_tDRmapper_](https://github.com/sararselitsky/tDRmapper) se realizo con Conda:
 
 ```bash
 conda install -c bioconda tdrmapper
