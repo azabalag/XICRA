@@ -1,0 +1,2 @@
+Sample name(s),Total Input Reads,Trimmed Reads (all),Trimmed Reads (unique),All miRNA Reads,Filtered miRNA Reads,Unique miRNAs,Hairpin miRNAs,mature tRNA Reads,primary tRNA Reads,snoRNA Reads,rRNA Reads,ncRNA others,mRNA Reads,Remaining Reads
+SRR12344553_trim_joined,7334331,6782970,539897,3877353,3871832,413,352,544142,36,4171,121953,533153,13392,1688418
