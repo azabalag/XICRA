@@ -35,9 +35,9 @@ Para chequear si se ha realizado adecuadamente la instalción:
 XICRA config
 ```
 
-### Análisis de miRNA
+### Análisis de _miRNA_
 
-Se adjunta el código de ejemplo de uso del análisis de miRNA:
+Se adjunta el código de ejemplo de uso del análisis de _miRNA_:
 
 ```bash
 ## run XICRA example
@@ -81,7 +81,7 @@ XICRA join --input test_XICRA
 
 ## Instalación de los softwares
  
-### MINTmap
+### _MINTmap_
 
 La instalacion de MINTmap (https://github.com/TJU-CMC-Org/MINTmap) se realizó con Conda:
 
@@ -89,7 +89,7 @@ La instalacion de MINTmap (https://github.com/TJU-CMC-Org/MINTmap) se realizó c
 conda install -c bioconda mintmap
 ```
 
-### miRge3.0
+### _miRge3.0_
 
 La instalación de miRGe3.0 se tuvo que realizar en un entrono de Conda propio:
 
@@ -145,7 +145,7 @@ sudo ln -s /home/arun/software/bowtie-1.3.0-linux-x86_64/bowtie-build /usr/local
 sudo ln -s /home/arun/software/bowtie-1.3.0-linux-x86_64/bowtie-inspect /usr/local/bin/bowtie-inspect
 ```
 
-### tDRmapper
+### _tDRmapper_
 
 La instalción de tDRmapper se realizo con Conda:
 
@@ -153,23 +153,61 @@ La instalción de tDRmapper se realizo con Conda:
 conda install -c bioconda tdrmapper
 ```
 
-## Analisis de tRNA
+## Analisis de _tRNA_
 
-Se muestra como ejemplo el análisis de tRNA para la muestra sRR12344552
+Se muestra como ejemplo el análisis de _tRNA_ para la muestra sRR12344552
 
-### MINTmap
+### _MINTmap_
 
 ```bash
+MINTmap.pl -f .SRR12344552_trim_joined.fastq -l ./LookupTable.tRFs.MINTmap_v1.txt -s ./tRNAspace.Spliced.Sequences.MINTmap_v1.fa -o ./OtherAnnotations.MINTmap_v1.txt 
+```
+
+### _miRGe3.0_
+
+```bash
+./miRge3.0 -s /./SRR12344553_trim_joined.fastq -lib ./miRge3_Lib/ -on human -db mirgenedb -pbwt -trf -gff -ie
+```
+### _tDRmapper_
+
+```bash
+perl /./TdrMappingScripts.pl ./hg19_mature_and_pre.fa ./SRR12344556_trim_joined.fastq 
+```
+
+## Comparación de la detección de _tRFs_
+
+A continuación se detalla el usos de los scripts creados para realizar la comparación de la detección de _tRFs_. Como ejemplo se muestra la comparación de la muestra SRR12344552:
+
+### table.py
+
+```bash
+## MINTmap Ambiguous
+python table.py MINTmapAmbiguous SRR12344552 /home/zabala/Escritorio/Test_XICRA/MINTmap_SRR12344552/output-MINTmap_v1-ambiguous-tRFs.expression.txt
+
+## MINTmap Exclusive
+python table.py MINTmapExclusive SRR12344552 /home/zabala/Escritorio/Test_XICRA/MINTmap_SRR12344552/output-MINTmap_v1-exclusive-tRFs.expression.txt
+
+## miRGe3.0
+python table.py miRge3.0 SRR12344552 /home/zabala/Escritorio/Test_XICRA/miRge/tRFs.samples.tmp/SRR12344552_trim_joined.tRFs.report.tsv 
+
+## tDRmapper
+python table.py tDRmapper SRR12344552 /home/zabala/Escritorio/Test_XICRA/tDRmapper/SRR12344552_trim_joined.fastq.hq_cs.mapped
+```
+
+### summary.py
+
+```bash
+python summary.py SRR12344552
+```
+
+### upsetR.R
+
+```r
 
 ```
 
-### miRGe3.0
+### comparation.py
 
 ```bash
-
-```
-### tDRmapper
-
-```bash
-
+conda comparation.py SRR12344552
 ```
