@@ -1,0 +1,8 @@
+Comparation	tRFs in common
+MINTmap Ambiguous VS miRge3.0	57
+MINTmap Ambiguous VS tDRmapper	43
+MINTmap Exclusive VS miRge3.0	105
+MINTmap Exclusive VS tDRmapper	82
+miRge3.0 VS tDRmapper	74
+MINTmap Ambiguous VS miRge3.0 VS tDRmapper	21
+MINTmap Exclusive VS miRge3.0 VS tDRmapper	39
