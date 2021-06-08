@@ -180,6 +180,8 @@ A continuación se detalla el usos de los scripts creados para realizar la compa
 
 ### table.py
 
+Resume los resultados obtenidos por cada software en una tabla, y muestra las secuencias tRFs detectadas y los contajes crudos detectados de cada uno de ellos.
+
 ```bash
 ## MINTmap Ambiguous
 python table.py MINTmapAmbiguous SRR12344552 /home/zabala/Escritorio/Test_XICRA/MINTmap_SRR12344552/output-MINTmap_v1-ambiguous-tRFs.expression.txt
@@ -196,17 +198,25 @@ python table.py tDRmapper SRR12344552 /home/zabala/Escritorio/Test_XICRA/tDRmapp
 
 ### summary.py
 
+Resume los _tRFs_ totales y únicos del software analizado.
+
 ```bash
 python summary.py SRR12344552
 ```
 
 ### upsetR.R
 
-```r
+Compara los tRFs detectados en común por los softwares, y los muestra en un gráfico:
 
+```r
+library(UpSetR)
+
+upsetR(MINTmap_Ambiguos, MINTmap_Exclusive, miRGe3.0, tDRmapper)
 ```
 
 ### comparation.py
+
+Detecta los tRFs detectados en común por los softwares. Esto es, cuantifica el solapamiento de los softwares en la detección de tRFs.
 
 ```bash
 conda comparation.py SRR12344552
