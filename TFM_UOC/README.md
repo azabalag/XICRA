@@ -6,7 +6,7 @@ Esto es una guía de los códigos empleados en el "Trabajo de Fin de Máster" ti
 
 ### Instalación 
 
-La instalación de [XICRA](https://github.com/HCGB-IGTP/XICRA) ha de hacerse en modo desarrollo:
+La instalación de [_XICRA_](https://github.com/HCGB-IGTP/XICRA) ha de hacerse en modo desarrollo:
 
 ```bash
 ## clone repo
