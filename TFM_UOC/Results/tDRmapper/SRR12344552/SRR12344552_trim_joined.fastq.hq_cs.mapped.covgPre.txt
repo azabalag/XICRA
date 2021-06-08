@@ -1,0 +1,1 @@
+file	tRNA	tRNAPer	Catted	Position	perCovg	base
