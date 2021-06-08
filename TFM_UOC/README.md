@@ -1,6 +1,6 @@
 # TFM_UOC
 
-Ésto es una guía de los códigos empleados en el Trabajo de Fin de Máster titulado "Desarrollo y mejora de la funcionalidad de la herramienta _XICRA_: comparativa de análisis de _tRNAs_"
+Esto es una guía de los códigos empleados en el "Trabajo de Fin de Máster" titulado "Desarrollo y mejora de la funcionalidad de la herramienta _XICRA_: comparativa de análisis de _tRNAs_"
 
 ## XICRA
 
@@ -56,7 +56,7 @@ XICRA miRNA --input test_XICRA --software miraligner sRNAbench
 ls test_XICRA/report/
 ```
 
-## Obtención de datos:
+## Obtención de datos
 
 Se detalla el código para obtener las muestras con _SRAtoolkit_ (https://github.com/ncbi/sra-tools). Se muestra como ejemplo la obtención de la muestra SRR12344552:
 
@@ -91,7 +91,7 @@ conda install -c bioconda mintmap
 
 ### _miRge3.0_
 
-La instalación de _miRGe3.0_ (https://github.com/mhalushka/miRge3.0) se tuvo que realizar en un entrono de Conda propio:
+La instalación de _miRge3.0_ (https://github.com/mhalushka/miRge3.0) se tuvo que realizar en un entrono de Conda propio:
 
 ```bash
 ## create conda environemt
